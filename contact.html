@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <script src="behavior.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tweets.html">Tweets</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </header>
-    <main>
-      <article>
-        <h1>Contact Me</h1>
-        <p>Feel free to reach out!</p>
-      </article>
-      <aside>
-        <p>Placeholder to add comment thread later.</p>
-      </aside>
-    </main>
-    <footer>
-      <p>Made by Sreymarch Soth for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="behavior.js" defer></script>
+
+
+</head>
+
+<body class="works_on_smartphone"></body>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active_nav">Contact</a></li>
+    </ul>
+
+
+  </header>
+
+  <form id="contact_form" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" autocomplete="given-name">
+    <label for="lname">Last name:</label><br />
+    <input type="text" id="lname" name="fname" autocomplete="family-name" /><br />
+    <label for="email">Email:</label><br />
+    <input type="text" id="email" name="email" autocomplete="email" /><br />
+    <label for="mobile">Mobile:</label><br />
+    <input type="text" id="mobile" name="mobile" autocomplete="tel" /><br />
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message"></textarea><br /><br />
+    <button type="submit">submit</button>
+    <button type="reset">Reset</button>
+
+
+
+
+
+  </form>
+
+
+  <footer>
+    <p>Made by Sreymarch Soth for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p>
+  </footer>
+</body>
+
 </html>
