@@ -24,27 +24,51 @@
 
 
   </header>
+  <main>
+    <article>
 
-  <form id="contact_form" method="post">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname" autocomplete="given-name"><br />
+      <form id="contact_form" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" autocomplete="given-name"><br />
 
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname" autocomplete="family-name"><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" autocomplete="family-name"><br />
 
-    <label for="email">Email:</label><br />
-    <input type="email" id="email" name="email" autocomplete="email"><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" autocomplete="email"><br />
 
-    <label for="mobile">Mobile:</label><br />
-    <input type="tel" id="mobile" name="mobile" autocomplete="tel"><br />
+        <label for="mobile">Mobile:</label><br />
+        <input type="tel" id="mobile" name="mobile" autocomplete="tel"><br />
 
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message"></textarea><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea><br /><br />
 
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-  </form>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </article>
 
+    <aside>
+      <div id="disqus_thread"></div>
+      <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        var disqus_config = function () {
+          this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://sreymarch-comments.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+          by Disqus.</a></noscript>
+    </aside>
+  </main>
 
   <footer>
     <p>Made by Sreymarch Soth for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a></p>
