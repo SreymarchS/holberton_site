@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* Arrange header, main, and footer in a column */
+    height: 100vh;
+    /* Ensure the body takes full height */
+    width: 90%;
+}
+
+header,
+footer {
+    background-color: #f4f4f4;
+    /* Optional, just to distinguish header/footer */
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    /* Take up 2/3 of the space */
+    overflow-y: auto;
+    background-color: #ddd;
+    /* Optional */
+    padding: 10px;
+}
+
+aside {
+    flex: 1;
+    /* Take up 1/3 of the space */
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    /* Optional */
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: #f4f4f4;
+    /* Optional */
+    padding: 10px;
+    text-align: center;
+}
