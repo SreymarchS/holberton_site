@@ -167,25 +167,28 @@ aside {
     border-radius: 8px;
 }
 
-.timeline-item {
-    /* margin-bottom: 20px; */
+/* about.html - timeline */
+
+.timeline-item label {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    background-color: #D0E9F1;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 12px;
+    padding-left: 24px;
+}
+
+.timeline-item label:hover {
+    background-color: #A9CBE6;
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-item input[type="checkbox"] {
     display: none;
-}
-
-.timeline-item label.year {
-    color: #000;
-    font-size: 24px;
-    font-weight: bold;
-    color: #007bff;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.timeline-item label.year:hover {
-    color: #2980b9;
 }
 
 .timeline-item .content {
