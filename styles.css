@@ -1,80 +1,95 @@
-/* Basic styles for body */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    /* Stack header, main, and footer vertically */
     height: 100vh;
-    /* Full height */
     margin: 0;
     background-color: #f0f0f0;
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+
 /* Header styles */
 header {
     background-color: #D0E9F1;
     color: #333;
-    padding: 20px;
+    padding: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
-header ul {
+
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 18px;
 }
 
-header ul li {
-    display: inline-block;
+.nav-item {
     font-size: 18px;
 }
 
-header .logo {
-    font-size: 40px;
-    /* Make the logo larger */
-    margin-right: 15px;
+.nav-item.logo {
     font-weight: bold;
 }
 
-/* Remove underline from all links */
-a {
+.nav-link {
     text-decoration: none;
-    /* Remove underline */
-    color: #000;
-    /* Set the default color for the link */
+    padding: 12px;
 }
 
-/* Change color on hover without underline */
-a:hover {
+.nav-link.active {
     color: #2980b9;
-    /* Change hover color */
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #D0E9F1;
+    padding: 16px;
+    font-size: 18px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+footer a {
+    font-size: 24px;
     text-decoration: none;
-    /* Ensure no underline on hover */
+    color: #007bff;
+    /* Link color */
+    margin-left: 5px;
+    /* Space between text and image */
 }
 
-/* Image styles for the clickable thumbnail */
-img.small {
-    width: 150px;
-    /* Adjust this size as needed */
-    height: auto;
+#smart_thumbnail {
+    transition: transform 0.3s ease;
+    height: 42px
 }
 
-/* Full size image when clicked */
-img {
-    transition: width 0.3s ease-in-out;
-    /* Add smooth transition effect */
-}
-
-img:not(.small) {
-    width: 500px;
-    /* Adjust to the larger size you want */
-    height: auto;
+#smart_thumbnail:not(.small) {
+    transform: scale(2);
 }
 
 /* Main section styles */
@@ -369,15 +384,7 @@ aside {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styles */
-footer {
-    display: flex;
-    background-color: #e1eee2;
-    /* Green background */
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+
 
 /* Text styling for content */
 h2 {
@@ -388,14 +395,4 @@ p {
     color: #666;
     line-height: 1.6;
     font-size: 16px;
-}
-
-footer h2 {
-    margin: 0;
-}
-
-/* Styling for footer h2 */
-footer h2 {
-    margin: 0;
-    font-size: 18px;
 }

@@ -2,189 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website- Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="behavior.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website- Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="behavior.js" defer></script>
 </head>
 
 <body class="works_on_smartphone">
-    <header>
+  <header>
+    <ul class="nav">
+      <li class="nav-item logo">&#9733;</li>
+      <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="tweets.html" class="nav-link">Tweets</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </header>
+  <main>
+    <article>
+      <h1>About Me</h1>
+      <p>Hi, I'm March! I'm an aspiring software developer transitioning from a registered nurse. I've always been
+        fascinated by technology, and I'm now pursuing my dream of becoming a developer. I have completed
+        Certificate III in Information Technology, where I'm learning software development through hands-on
+        projects and peer collaboration. I'm an adventurous and enthusiastic person, always seeking new
+        challenges and eager to expand my skill set. This passion for learning and exploring new opportunities
+        is what drives my transition into software development, as I believe it's the perfect field for me to
+        grow, innovate, and continue my journey of discovery.</p>
+
+      <h2>Learning and Skills</h2>
+      <ul>
+
+        <p><strong>Languages:</strong> Python, JavaScript, HTML, CSS</p>
+
+        <p><strong>Tools & Frameworks:</strong> Git, Node.js, React (currently learning), Express</p>
+
+        <p><strong>Problem Solving & Critical Thinking:</strong> You ensured precise patient care, similar
+          to
+          writing clean, bug-free code and conducting thorough testing in development.</p>
+
+        <p><strong>Attention to detail:</strong> As a nurse, you made quick decisions to
+          ensure patient safety, which translates into troubleshooting and debugging code in software
+          development.</p>
+
+        <p><strong>Team Collaboration & Communication:</strong> Working with medical teams has prepared you
+          for collaborating effectively with developers, designers, and PMs in tech environments.</p>
+
+        <p><strong>Adapting to New Technologies:</strong> Just as you adapted to new medical equipment,
+          you'll quickly learn new programming languages and technologies in development.</p>
+
+        <p><strong>User-Centered Mindset:</strong> Prioritizing patient comfort and care translates into
+          designing user-friendly software that meets the needs of end-users.</p>
+
+      </ul>
+      <!-- Box for "My Journey" with expandable content -->
+      <div class="goal-box" onclick="toggleGoalContent('journey')">
+        <h3>My Journey: Aspiring to Join Holberton, PEXA, and SHEE</h3>
+      </div>
+
+      <div id="goal-content-journey" class="goal-content">
         <ul>
-            <li class="logo">&#9733;</li> <!-- Unicode star character as a logo -->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tweets.html">Tweets</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+
+          <p><strong>Why I Chose Software Development:</strong><br>
+            I'm passionate about technology and how it can solve real-world problems. As a scrub/scout
+            nurse, I developed a deep appreciation for precision, organization, and problem-solving. Whether
+            I was preparing instruments for a surgical procedure or assisting the surgeon, I learned how
+            important it is to be detail-oriented and proactive. These skills have naturally translated into
+            my journey toward software development, where the same focus on collaboration, planning, and
+            execution is crucial. I thrive in environments where I am continuously learning and developing
+            new skills. My background in healthcare, coupled with my passion for technology, motivates me to
+            bring a unique perspective to the tech world.</p>
+
+          <p><strong>Why Holberton School:</strong><br>
+            I chose Holberton School because of its unique, hands-on, project-based curriculum that
+            emphasizes learning through real-world applications. Holberton's peer-driven approach and
+            focus on collaboration are incredibly appealing to me because I believe that learning from
+            others and solving complex problems together is the best way to prepare for a career in
+            tech. I am currently developing my skills in software engineering, and I'm excited to
+            continue growing as a developer.</p>
+
+          <p><strong>Why PEXA?</strong><br>
+            I am deeply excited about the prospect of working at PEXA, a company that is transforming
+            the property settlement process. PEXA's innovative approach to creating digital property
+            transactions resonates with my passion for technology and efficiency. While I'm still early
+            in my career, I'm eager to learn from PEXA's forward-thinking team and contribute my skills
+            to their mission of simplifying and improving the real estate industry through technology.
+          </p>
+
+
+          <p><strong>Why the SHEE Program?</strong><br>
+            Being a woman in tech, I am passionate about empowering others and promoting diversity in
+            the STEM field. The SHEE Program is something I aspire to be part of because it focuses on
+            supporting women in engineering and entrepreneurship. I believe that diversity is key to
+            driving innovation, and the SHEE Program offers a platform for women to grow, lead, and
+            mentor others in the tech industry. By joining this program, I hope to continue building my
+            skills and contribute to fostering a more inclusive tech community.</p>
 
         </ul>
-    </header>
-    <main>
-        <article>
-            <h1>About Me</h1>
-            <p>Hi, I'm March! I'm an aspiring software developer transitioning from a registered nurse. I've always been
-                fascinated by technology, and I'm now pursuing my dream of becoming a developer. I have completed
-                Certificate III in Information Technology, where I'm learning software development through hands-on
-                projects and peer collaboration. I'm an adventurous and enthusiastic person, always seeking new
-                challenges and eager to expand my skill set. This passion for learning and exploring new opportunities
-                is what drives my transition into software development, as I believe it's the perfect field for me to
-                grow, innovate, and continue my journey of discovery.</p>
+      </div>
 
-            <h2>Learning and Skills</h2>
-            <ul>
+      <!-- Box for "My Future Goals" with expandable content -->
+      <div class="goal-box" onclick="toggleGoalContent('goals')">
+        <h3>My Future Goals</h3>
+      </div>
 
-                <p><strong>Languages:</strong> Python, JavaScript, HTML, CSS</p>
+      <div id="goal-content-goals" class="goal-content">
+        <ul>
 
-                <p><strong>Tools & Frameworks:</strong> Git, Node.js, React (currently learning), Express</p>
-
-                <p><strong>Problem Solving & Critical Thinking:</strong> You ensured precise patient care, similar
-                    to
-                    writing clean, bug-free code and conducting thorough testing in development.</p>
-
-                <p><strong>Attention to detail:</strong> As a nurse, you made quick decisions to
-                    ensure patient safety, which translates into troubleshooting and debugging code in software
-                    development.</p>
-
-                <p><strong>Team Collaboration & Communication:</strong> Working with medical teams has prepared you
-                    for collaborating effectively with developers, designers, and PMs in tech environments.</p>
-
-                <p><strong>Adapting to New Technologies:</strong> Just as you adapted to new medical equipment,
-                    you'll quickly learn new programming languages and technologies in development.</p>
-
-                <p><strong>User-Centered Mindset:</strong> Prioritizing patient comfort and care translates into
-                    designing user-friendly software that meets the needs of end-users.</p>
-
-            </ul>
-            <!-- Box for "My Journey" with expandable content -->
-            <div class="goal-box" onclick="toggleGoalContent('journey')">
-                <h3>My Journey: Aspiring to Join Holberton, PEXA, and SHEE</h3>
-            </div>
-
-            <div id="goal-content-journey" class="goal-content">
-                <ul>
-
-                    <p><strong>Why I Chose Software Development:</strong><br>
-                        I'm passionate about technology and how it can solve real-world problems. As a scrub/scout
-                        nurse, I developed a deep appreciation for precision, organization, and problem-solving. Whether
-                        I was preparing instruments for a surgical procedure or assisting the surgeon, I learned how
-                        important it is to be detail-oriented and proactive. These skills have naturally translated into
-                        my journey toward software development, where the same focus on collaboration, planning, and
-                        execution is crucial. I thrive in environments where I am continuously learning and developing
-                        new skills. My background in healthcare, coupled with my passion for technology, motivates me to
-                        bring a unique perspective to the tech world.</p>
-
-                    <p><strong>Why Holberton School:</strong><br>
-                        I chose Holberton School because of its unique, hands-on, project-based curriculum that
-                        emphasizes learning through real-world applications. Holberton's peer-driven approach and
-                        focus on collaboration are incredibly appealing to me because I believe that learning from
-                        others and solving complex problems together is the best way to prepare for a career in
-                        tech. I am currently developing my skills in software engineering, and I'm excited to
-                        continue growing as a developer.</p>
-
-                    <p><strong>Why PEXA?</strong><br>
-                        I am deeply excited about the prospect of working at PEXA, a company that is transforming
-                        the property settlement process. PEXA's innovative approach to creating digital property
-                        transactions resonates with my passion for technology and efficiency. While I'm still early
-                        in my career, I'm eager to learn from PEXA's forward-thinking team and contribute my skills
-                        to their mission of simplifying and improving the real estate industry through technology.
-                    </p>
+          <p><strong>Develop innovative software solutions:</strong> I want to build applications that
+            help solve real-world challenges, particularly in the real estate sector.</p>
 
 
-                    <p><strong>Why the SHEE Program?</strong><br>
-                        Being a woman in tech, I am passionate about empowering others and promoting diversity in
-                        the STEM field. The SHEE Program is something I aspire to be part of because it focuses on
-                        supporting women in engineering and entrepreneurship. I believe that diversity is key to
-                        driving innovation, and the SHEE Program offers a platform for women to grow, lead, and
-                        mentor others in the tech industry. By joining this program, I hope to continue building my
-                        skills and contribute to fostering a more inclusive tech community.</p>
+          <p><strong>Contribute to PEXA's digital transformation:</strong> I aspire to contribute to
+            PEXA's mission of transforming property transactions through technology and innovation.</p>
 
-                </ul>
-            </div>
+          <p><strong>Leadership in tech and mentoring:</strong> I aim to lead by example, inspiring and
+            mentoring the next generation of developers, particularly women in STEM.</p>
 
-            <!-- Box for "My Future Goals" with expandable content -->
-            <div class="goal-box" onclick="toggleGoalContent('goals')">
-                <h3>My Future Goals</h3>
-            </div>
+          <p><strong>Entrepreneurship in tech:</strong> I dream of one day launching my own tech startup,
+            combining my healthcare background and software development expertise to create innovative
+            solutions.</p>
 
-            <div id="goal-content-goals" class="goal-content">
-                <ul>
+        </ul>
+      </div>
 
-                    <p><strong>Develop innovative software solutions:</strong> I want to build applications that
-                        help solve real-world challenges, particularly in the real estate sector.</p>
+      <div class="goal-box" onclick="toggleGoalContent('projects')">
+        <h3>Check out my project</h3>
+      </div>
 
+      <div id="goal-content-projects" class="goal-content">
+        <ul>
 
-                    <p><strong>Contribute to PEXA's digital transformation:</strong> I aspire to contribute to
-                        PEXA's mission of transforming property transactions through technology and innovation.</p>
-
-                    <p><strong>Leadership in tech and mentoring:</strong> I aim to lead by example, inspiring and
-                        mentoring the next generation of developers, particularly women in STEM.</p>
-
-                    <p><strong>Entrepreneurship in tech:</strong> I dream of one day launching my own tech startup,
-                        combining my healthcare background and software development expertise to create innovative
-                        solutions.</p>
-
-                </ul>
-            </div>
-
-            <div class="goal-box" onclick="toggleGoalContent('projects')">
-                <h3>Check out my project</h3>
-            </div>
-
-            <div id="goal-content-projects" class="goal-content">
-                <ul>
-
-                </ul>
-                <a href="https://yourwebsite.com" target="_blank" class="goal-link">Visit my website</a>
-            </div>
+        </ul>
+        <a href="https://yourwebsite.com" target="_blank" class="goal-link">Visit my website</a>
+      </div>
 
 
-            <!-- Add this JavaScript at the end of your HTML file -->
-            <script>
-                function toggleGoalContent(section) {
-                    var content = document.getElementById('goal-content-' + section);
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                }
-            </script>
+      <!-- Add this JavaScript at the end of your HTML file -->
+      <script>
+        function toggleGoalContent(section) {
+          var content = document.getElementById('goal-content-' + section);
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        }
+      </script>
 
 
 
-        </article>
-        <aside>
-            <div id="disqus_thread"></div>
-            <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                var disqus_config = function () {
-                    this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                (function () { // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://sreymarch-comments.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
-                    by Disqus.</a></noscript>
-        </aside>
-    </main>
-    <footer>
-        <p>Made by Sreymarch Soth for <a href="https://www.example.com">
-                <img id="smart_thumbnail" class="small" src="https://apply.holbertonschool.com/holberton-logo.png"
-                    alt="Holberton Logo">
-            </a>
-        </p>
-    </footer>
-    <script id="dsq-count-scr" src="//sreymarch-comments.disqus.com/count.js" async></script>
-
-
+    </article>
+    <aside>
+      <div id="disqus_thread"></div>
+      <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        var disqus_config = function () {
+          this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://sreymarch-comments.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+          by Disqus.</a></noscript>
+    </aside>
+  </main>
+  <footer>
+    <p>Made by Sreymarch Soth for <a href="https://www.holbertonschool.com/">
+        <img id="smart_thumbnail" class="small" src="https://apply.holbertonschool.com/holberton-logo.png"
+          alt="Holberton Logo">
+      </a>
+    </p>
+  </footer>
+  <script id="dsq-count-scr" src="//sreymarch-comments.disqus.com/count.js" async></script>
 </body>
 
 </html>
