@@ -13,7 +13,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #dce9dc;
+    background-color: #D0E9F1;
     color: #333;
     padding: 20px;
     display: flex;
@@ -42,6 +42,21 @@ header .logo {
     font-weight: bold;
 }
 
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #000;
+    /* Set the default color for the link */
+}
+
+/* Change color on hover without underline */
+a:hover {
+    color: #2980b9;
+    /* Change hover color */
+    text-decoration: none;
+    /* Ensure no underline on hover */
+}
 
 /* Image styles for the clickable thumbnail */
 img.small {
@@ -74,7 +89,7 @@ article {
     flex: 2;
     /* 2/3 of the width */
     overflow-y: auto;
-    background-color: #ffffff;
+    background-color: #fdfafa;
     padding: 20px;
     margin-right: 20px;
     border-radius: 8px;
@@ -88,21 +103,42 @@ article {
     box-sizing: border-box;
 }
 
-/* Container for "goal-box" and "goal-content" */
 .goal-box {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #D0E9F1;
+    /* Soft pastel blue for a calm and tranquil look */
+    color: #000;
+    /* Darker text for contrast without being too harsh */
+    padding: 25px;
+    /* Ample padding for a spacious, comfortable feel */
+    border-radius: 10px;
+    /* Rounded corners for a soft, smooth look */
     cursor: pointer;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+    /* Added space between each box */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    /* Bold text to maintain emphasis */
 }
 
 .goal-box:hover {
-    background-color: #3498db;
-    /* Change color on hover */
-    color: white;
+    background-color: #A9CBE6;
+    /* Slightly darker pastel blue for a soft hover effect */
+    color: #ffffff;
+    /* White text on hover for contrast */
 }
+
+/* Optional: Soft shadow for a clean, airy feel */
+.goal-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* Very subtle shadow for light depth */
+}
+
+.goal-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Light shadow effect on hover */
+}
+
+
 
 /* Content that will be hidden initially */
 .goal-content {
@@ -182,7 +218,7 @@ h5 {
 
 /* Optional: Hover effect for the year label */
 .timeline-item label.year:hover {
-    color: #ff5733;
+    color: #ffb6b9;
     /* transform: scale(1.1); */
 }
 
@@ -258,12 +294,12 @@ button {
 }
 
 button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #3a98c1;
     color: white;
 }
 
 button[type="reset"] {
-    background-color: #f44336;
+    background-color: #ffb6b9;
     color: white;
 }
 
