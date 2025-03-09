@@ -24,31 +24,23 @@
     <article>
       <section class="contact-section">
         <h1>Contact Me</h1>
-        <p>Feel free to reach out for any inquiries or collaboration opportunities. I’m always eager to connect with
+        <p>Feel free to reach out for any inquiries or collaboration opportunities. I'm always eager to connect with
           fellow developers, recruiters, or anyone interested in discussing technology!</p>
-
         <div class="contact-container">
-          <form id="contact_form" method="post">
+          <form id="contact_form" method="get" action="mailto:sreymarch.soth@gmail.com?subject=Contact%20Form">
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" autocomplete="given-name">
-
             <label for="lname">Last name:</label>
             <input type="text" id="lname" name="lname" autocomplete="family-name">
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" autocomplete="email">
-
             <label for="mobile">Mobile:</label>
             <input type="tel" id="mobile" name="mobile" autocomplete="tel">
-
             <label for="message">Message:</label>
             <textarea id="message" name="message"></textarea>
-
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
           </form>
-
-
           <div class="social-links">
             <h3>Connect with me:</h3>
             <a href="https://github.com/SreymarchS" target="_blank">
@@ -67,12 +59,9 @@
               <i class="fab fa-facebook"></i> Facebook
             </a>
           </div>
-
         </div>
       </section>
-
     </article>
-
     <aside>
       <div id="disqus_thread"></div>
       <script>
