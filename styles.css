@@ -167,7 +167,7 @@ h5 {
 /* Optional: Hover effect for the year label */
 .timeline-item label.year:hover {
     color: #ff5733;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 /* Content inside each timeline item */
