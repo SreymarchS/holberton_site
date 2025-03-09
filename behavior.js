@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    var thumbnailElement = document.getElementById("smart_thumbnail");
+    const thumbnailElement = document.getElementById("smart_thumbnail");
     thumbnailElement.addEventListener("click", function () {
         if (thumbnailElement.className == "") {
             thumbnailElement.className = "small";
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleGoalContent(section) {
-    var content = document.getElementById('goal-content-' + section);
+    const content = document.getElementById('goal-content-' + section);
     if (content.style.display === "block") {
         content.style.display = "none";
     } else {
