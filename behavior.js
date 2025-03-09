@@ -18,3 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function toggleGoalContent(section) {
+    var content = document.getElementById('goal-content-' + section);
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}

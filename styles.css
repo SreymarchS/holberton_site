@@ -18,10 +18,17 @@ a:hover {
     color: #2980b9;
 }
 
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.5;
+}
 
 /* Header styles */
 header {
-    height: 42px;
     background-color: #D0E9F1;
     color: #333;
     padding: 18px;
@@ -59,7 +66,6 @@ header {
 
 /* Footer styles */
 footer {
-    height: 42px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -91,6 +97,7 @@ footer a {
     transform: scale(2);
 }
 
+/* main common content */
 main {
     display: flex;
     flex-direction: row;
@@ -129,71 +136,47 @@ aside {
 }
 
 /* index.html - goal */
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .goal-box {
     background-color: #D0E9F1;
-    /* Soft pastel blue for a calm and tranquil look */
     color: #000;
-    /* Darker text for contrast without being too harsh */
-    padding: 25px;
-    /* Ample padding for a spacious, comfortable feel */
-    border-radius: 10px;
-    /* Rounded corners for a soft, smooth look */
+    padding: 24px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 30px;
-    /* Added space between each box */
     transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
-    /* Bold text to maintain emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .goal-box:hover {
     background-color: #A9CBE6;
-    /* Slightly darker pastel blue for a soft hover effect */
     color: #ffffff;
-    /* White text on hover for contrast */
-}
-
-/* Optional: Soft shadow for a clean, airy feel */
-.goal-box {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    /* Very subtle shadow for light depth */
-}
-
-.goal-box:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    /* Light shadow effect on hover */
 }
 
-/* Content that will be hidden initially */
 .goal-content {
     display: none;
-    /* Initially hidden */
-    padding: 10px;
+    padding: 12px;
     background-color: #e1e1e1;
     border-radius: 8px;
-    margin-top: 10px;
 }
-
-/* about.html - timeline */
-/* Basic styling for the timeline
-#timeline {
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
 
 .timeline-item {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
-/* Hide the checkbox inputs */
 .timeline-item input[type="checkbox"] {
     display: none;
 }
 
-/* Style the labels (years) to look like clickable items */
 .timeline-item label.year {
+    color: #000;
     font-size: 24px;
     font-weight: bold;
     color: #007bff;
@@ -201,7 +184,10 @@ aside {
     transition: transform 0.3s ease;
 }
 
-/* Initially hide the content */
+.timeline-item label.year:hover {
+    color: #2980b9;
+}
+
 .timeline-item .content {
     display: none;
     padding-left: 20px;
@@ -209,40 +195,20 @@ aside {
     color: #555;
 }
 
-/* Show the content when the checkbox is checked */
 .timeline-item input[type="checkbox"]:checked+label+.content {
     display: block;
 }
 
-/* Optional: Hover effect for the year label */
-.timeline-item label.year:hover {
-    color: #ffb6b9;
-    /* transform: scale(1.1); */
-}
-
-/* Content inside each timeline item */
 .timeline-item .content {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-/* Fade in content when the checkbox is checked */
 .timeline-item input[type="checkbox"]:checked+label+.content {
     opacity: 1;
 }
 
-/* Container for Contact Section */
-.contact-section {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Form Layout */
+/* contact.html - Form Layout */
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -250,7 +216,6 @@ aside {
     flex-wrap: wrap;
 }
 
-/* Contact Form Styling */
 #contact_form {
     width: 45%;
     box-sizing: border-box;
@@ -296,7 +261,6 @@ button:hover {
     opacity: 0.9;
 }
 
-/* contact.html - Social Links Styling */
 .social-links {
     width: 45%;
     display: flex;
@@ -328,7 +292,6 @@ button:hover {
     border-radius: 50%;
 }
 
-/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
@@ -343,17 +306,4 @@ button:hover {
         width: 100%;
         margin-top: 20px;
     }
-}
-
-
-
-/* Text styling for content */
-h2 {
-    color: #333;
-}
-
-p {
-    color: #666;
-    line-height: 1.6;
-    font-size: 16px;
 }

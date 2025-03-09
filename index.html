@@ -59,105 +59,91 @@
           <p><strong>User-Centered Mindset:</strong> Prioritizing patient comfort and care translates into
             designing user-friendly software that meets the needs of end-users.</p>
         </li>
-
       </ul>
-      <!-- Box for "My Journey" with expandable content -->
-      <div class="goal-box" onclick="toggleGoalContent('journey')">
-        <h3>My Journey: Aspiring to Join Holberton, PEXA, and SHEE</h3>
+
+      <div class="goals">
+        <div class="goal-box" onclick="toggleGoalContent('journey')">
+          <h3>My Journey: Aspiring to Join Holberton, PEXA, and SHEE</h3>
+        </div>
+        <div id="goal-content-journey" class="goal-content">
+          <ul class="list-content">
+            <li>
+              <p><strong>Why I Chose Software Development:</strong><br>
+                I'm passionate about technology and how it can solve real-world problems. As a scrub/scout
+                nurse, I developed a deep appreciation for precision, organization, and problem-solving. Whether
+                I was preparing instruments for a surgical procedure or assisting the surgeon, I learned how
+                important it is to be detail-oriented and proactive. These skills have naturally translated into
+                my journey toward software development, where the same focus on collaboration, planning, and
+                execution is crucial. I thrive in environments where I am continuously learning and developing
+                new skills. My background in healthcare, coupled with my passion for technology, motivates me to
+                bring a unique perspective to the tech world.</p>
+            </li>
+            <li>
+              <p><strong>Why Holberton School:</strong><br>
+                I chose Holberton School because of its unique, hands-on, project-based curriculum that
+                emphasizes learning through real-world applications. Holberton's peer-driven approach and
+                focus on collaboration are incredibly appealing to me because I believe that learning from
+                others and solving complex problems together is the best way to prepare for a career in
+                tech. I am currently developing my skills in software engineering, and I'm excited to
+                continue growing as a developer.</p>
+            </li>
+            <li>
+              <p><strong>Why PEXA?</strong><br>
+                I am deeply excited about the prospect of working at PEXA, a company that is transforming
+                the property settlement process. PEXA's innovative approach to creating digital property
+                transactions resonates with my passion for technology and efficiency. While I'm still early
+                in my career, I'm eager to learn from PEXA's forward-thinking team and contribute my skills
+                to their mission of simplifying and improving the real estate industry through technology.
+              </p>
+            </li>
+            <li>
+              <p><strong>Why the SHEE Program?</strong><br>
+                Being a woman in tech, I am passionate about empowering others and promoting diversity in
+                the STEM field. The SHEE Program is something I aspire to be part of because it focuses on
+                supporting women in engineering and entrepreneurship. I believe that diversity is key to
+                driving innovation, and the SHEE Program offers a platform for women to grow, lead, and
+                mentor others in the tech industry. By joining this program, I hope to continue building my
+                skills and contribute to fostering a more inclusive tech community.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="goal-box" onclick="toggleGoalContent('goals')">
+          <h3>My Future Goals</h3>
+        </div>
+        <div id="goal-content-goals" class="goal-content">
+          <ul class="list-content">
+            <li>
+              <p><strong>Develop innovative software solutions:</strong> I want to build applications that
+                help solve real-world challenges, particularly in the real estate sector.</p>
+            </li>
+            <li>
+              <p><strong>Contribute to PEXA's digital transformation:</strong> I aspire to contribute to
+                PEXA's mission of transforming property transactions through technology and innovation.</p>
+            </li>
+            <li>
+              <p><strong>Leadership in tech and mentoring:</strong> I aim to lead by example, inspiring and
+                mentoring the next generation of developers, particularly women in STEM.</p>
+            </li>
+            <li>
+              <p><strong>Entrepreneurship in tech:</strong> I dream of one day launching my own tech startup,
+                combining my healthcare background and software development expertise to create innovative
+                solutions.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="goal-box" onclick="toggleGoalContent('projects')">
+          <h3>Check out my projects</h3>
+        </div>
+        <div id="goal-content-projects" class="goal-content">
+          <ul class="list-content">
+            <li>
+              <p><a href="https://yourwebsite.com" target="_blank" class="goal-link">Visit my website</a></p>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div id="goal-content-journey" class="goal-content">
-        <ul>
-
-          <p><strong>Why I Chose Software Development:</strong><br>
-            I'm passionate about technology and how it can solve real-world problems. As a scrub/scout
-            nurse, I developed a deep appreciation for precision, organization, and problem-solving. Whether
-            I was preparing instruments for a surgical procedure or assisting the surgeon, I learned how
-            important it is to be detail-oriented and proactive. These skills have naturally translated into
-            my journey toward software development, where the same focus on collaboration, planning, and
-            execution is crucial. I thrive in environments where I am continuously learning and developing
-            new skills. My background in healthcare, coupled with my passion for technology, motivates me to
-            bring a unique perspective to the tech world.</p>
-
-          <p><strong>Why Holberton School:</strong><br>
-            I chose Holberton School because of its unique, hands-on, project-based curriculum that
-            emphasizes learning through real-world applications. Holberton's peer-driven approach and
-            focus on collaboration are incredibly appealing to me because I believe that learning from
-            others and solving complex problems together is the best way to prepare for a career in
-            tech. I am currently developing my skills in software engineering, and I'm excited to
-            continue growing as a developer.</p>
-
-          <p><strong>Why PEXA?</strong><br>
-            I am deeply excited about the prospect of working at PEXA, a company that is transforming
-            the property settlement process. PEXA's innovative approach to creating digital property
-            transactions resonates with my passion for technology and efficiency. While I'm still early
-            in my career, I'm eager to learn from PEXA's forward-thinking team and contribute my skills
-            to their mission of simplifying and improving the real estate industry through technology.
-          </p>
-
-
-          <p><strong>Why the SHEE Program?</strong><br>
-            Being a woman in tech, I am passionate about empowering others and promoting diversity in
-            the STEM field. The SHEE Program is something I aspire to be part of because it focuses on
-            supporting women in engineering and entrepreneurship. I believe that diversity is key to
-            driving innovation, and the SHEE Program offers a platform for women to grow, lead, and
-            mentor others in the tech industry. By joining this program, I hope to continue building my
-            skills and contribute to fostering a more inclusive tech community.</p>
-
-        </ul>
-      </div>
-
-      <!-- Box for "My Future Goals" with expandable content -->
-      <div class="goal-box" onclick="toggleGoalContent('goals')">
-        <h3>My Future Goals</h3>
-      </div>
-
-      <div id="goal-content-goals" class="goal-content">
-        <ul>
-
-          <p><strong>Develop innovative software solutions:</strong> I want to build applications that
-            help solve real-world challenges, particularly in the real estate sector.</p>
-
-
-          <p><strong>Contribute to PEXA's digital transformation:</strong> I aspire to contribute to
-            PEXA's mission of transforming property transactions through technology and innovation.</p>
-
-          <p><strong>Leadership in tech and mentoring:</strong> I aim to lead by example, inspiring and
-            mentoring the next generation of developers, particularly women in STEM.</p>
-
-          <p><strong>Entrepreneurship in tech:</strong> I dream of one day launching my own tech startup,
-            combining my healthcare background and software development expertise to create innovative
-            solutions.</p>
-
-        </ul>
-      </div>
-
-      <div class="goal-box" onclick="toggleGoalContent('projects')">
-        <h3>Check out my project</h3>
-      </div>
-
-      <div id="goal-content-projects" class="goal-content">
-        <ul>
-
-        </ul>
-        <a href="https://yourwebsite.com" target="_blank" class="goal-link">Visit my website</a>
-      </div>
-
-
-      <!-- Add this JavaScript at the end of your HTML file -->
-      <script>
-        function toggleGoalContent(section) {
-          var content = document.getElementById('goal-content-' + section);
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        }
-      </script>
-
-
-
     </article>
     <aside>
       <div id="disqus_thread"></div>
